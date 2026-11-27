@@ -14,3 +14,9 @@ services:
     image: redis:7.2.2
   memcached:
     image: memcached:1.6.45
+  mongodb:
+    image: mongo:8.3.17
+    environment:
+      - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
