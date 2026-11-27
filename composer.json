@@ -4,6 +4,12 @@
         "ext-redis": "*",
         "ext-memcached": "*",
         "ext-mongodb": "*",
-        "mongodb/mongodb": "^2.5"
+        "mongodb/mongodb": "^2.5",
+        "elasticsearch/elasticsearch": "^9.5"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     }
 }

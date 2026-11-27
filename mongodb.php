@@ -14,6 +14,6 @@ $database = $mongoClient->selectDatabase($env['MONGO_INITDB_DATABASE']);
 
 $collection = $database->selectCollection('products');
 
-$collection->insertOne(['name' => 'Product 1', 'price' => 150]);
+/* $collection->insertOne(['name' => 'Product 1', 'price' => 150]); */
 
 var_dump($collection->findOne(['name' => 'Product 1']));

@@ -20,3 +20,8 @@ services:
       - MONGO_INITDB_DATABASE=${MONGO_INITDB_DATABASE}
       - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
       - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+  elasticsearch:
+    image: elasticsearch:9.5.7
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
