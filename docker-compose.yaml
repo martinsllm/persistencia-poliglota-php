@@ -25,3 +25,6 @@ services:
     environment:
       - xpack.security.enabled=false
       - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  cassandra:
+    image: cassandra:4.1.10

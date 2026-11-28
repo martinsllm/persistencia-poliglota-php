@@ -4,6 +4,7 @@
         "ext-redis": "*",
         "ext-memcached": "*",
         "ext-mongodb": "*",
+        "ext-cassandra": "*",
         "mongodb/mongodb": "^2.5",
         "elasticsearch/elasticsearch": "^9.5"
     },
